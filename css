@@ -1,15 +1,85 @@
-* {
-    margin: 5;
+body 
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Helvetica;
-  }
-  
-  body {
-    background-color: #f8f8f8;
+    background-color: #f4f4f4;
+}
+
+header 
+{
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+form 
+{
+    background-color: white;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form fieldset 
+{
+    border: none;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 3em;
-  }
-  
+    flex-direction: column;
+}
+
+form label 
+{
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+form input[type="text"],
+form input[type="number"] 
+{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form input[type="submit"],
+form input[type="reset"],
+form button 
+{
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover,
+form input[type="reset"]:hover,
+form button:hover 
+{
+    background-color: #555;
+}
+
+#resultado 
+{
+    margin-top: 10px;
+    font-weight: bold;
+    color: green;
+}
+
+#resultado:empty 
+{
+    display: none; 
+}
